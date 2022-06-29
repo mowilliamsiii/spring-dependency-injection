@@ -18,6 +18,11 @@ public class SpringDependencyInjectionApplication {
 
         System.out.println(greeting);
 
+        System.out.println("===============18N ENGLISH=======================");
+
+        I18nController i18nController = (I18nController) context.getBean("i18nController");
+        System.out.println(i18nController.greeting());
+
         System.out.println("==========Property=========================");
 
         PropertyInjectedController propertyInjectedController = (PropertyInjectedController) context.getBean("propertyInjectedController");
