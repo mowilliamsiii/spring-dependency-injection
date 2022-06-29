@@ -18,7 +18,7 @@ public class SpringDependencyInjectionApplication {
 
         System.out.println(greeting);
 
-        System.out.println("===============18N ENGLISH=======================");
+        System.out.println("===============18N ENGLISH/SPANISH=======================");
 
         I18nController i18nController = (I18nController) context.getBean("i18nController");
         System.out.println(i18nController.greeting());
